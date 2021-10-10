@@ -44,7 +44,7 @@ void draw()
   if(spin>=(PI/2)){
     spin =0;
   }
-
+  textSize(20);
   text("sum of dice: ", 300, 20);
   text("highest score: "+high, 300, 40);
 }
@@ -69,17 +69,12 @@ class Die //models one single dice cube
   }
   void roll()
   {
-
     random = (int)(Math.random()*6+1);
     //System.out.println(random);
     sum+=random;
   }
   void show()
   {
-
-
-
-
     strokeWeight(1.5);
     fill(0);
     if (random == 1) {
